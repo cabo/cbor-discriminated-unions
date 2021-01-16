@@ -267,7 +267,7 @@ Table of Contents
 
    This corresponds to the following schema, in CDDL [RFC8610] notation:
 
-   result = 121(\[int, text\])
+   result = 121([int, text])
             122(bytes)
 
    Example values:
@@ -294,11 +294,11 @@ Table of Contents
    ; A data type representing simple arithmetic expressions
 
    expr = 121(int) ; integer literal
-        / 122(\[expr, expr\]) ; addition
-        / 123(\[expr, expr\]) ; subtraction
+        / 122([expr, expr]) ; addition
+        / 123([expr, expr]) ; subtraction
         / 124(expr) ; unary negation
-        / 125(\[expr, expr\]) ; multiplication
-        / 126(\[expr, expr\]) ; integer division
+        / 125([expr, expr]) ; multiplication
+        / 126([expr, expr]) ; integer division
 
 6.  IANA Considerations
 
