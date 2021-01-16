@@ -245,7 +245,7 @@ that is a failure or success, where:
 This corresponds to the following schema, in CDDL {{-cddl}} notation:
 
 ~~~ cddl
-result = 121(\[int, text\])
+result = 121([int, text])
          122(bytes)
 ~~~
 
@@ -274,11 +274,11 @@ could be encoded using this schema:
 ; A data type representing simple arithmetic expressions
 
 expr = 121(int) ; integer literal
-     / 122(\[expr, expr\]) ; addition
-     / 123(\[expr, expr\]) ; subtraction
+     / 122([expr, expr]) ; addition
+     / 123([expr, expr]) ; subtraction
      / 124(expr) ; unary negation
-     / 125(\[expr, expr\]) ; multiplication
-     / 126(\[expr, expr\]) ; integer division
+     / 125([expr, expr]) ; multiplication
+     / 126([expr, expr]) ; integer division
 ~~~
 
 # IANA Considerations
