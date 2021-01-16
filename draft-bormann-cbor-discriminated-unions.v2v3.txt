@@ -43,21 +43,6 @@ Abstract
 
 Note to Readers
 
-
-
-
-
-
-
-
-
-
-
-Coutts, et al.            Expires 20 July 2021                  [Page 1]
-
-Internet-Draft     CBOR Tags for Discriminated Unions       January 2021
-
-
    This is an individual submission to the CBOR working group of the
    IETF, https://datatracker.ietf.org/wg/cbor/about/
    (https://datatracker.ietf.org/wg/cbor/about/).  Discussion currently
@@ -101,25 +86,17 @@ Copyright Notice
 
 Table of Contents
 
-   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3
-   2.  Semantics . . . . . . . . . . . . . . . . . . . . . . . . . .   4
-   3.  Deterministically Encoded CBOR  . . . . . . . . . . . . . . .   5
-   4.  Rationale . . . . . . . . . . . . . . . . . . . . . . . . . .   5
-   5.  Examples  . . . . . . . . . . . . . . . . . . . . . . . . . .   6
-
-
-
-Coutts, et al.            Expires 20 July 2021                  [Page 2]
-
-Internet-Draft     CBOR Tags for Discriminated Unions       January 2021
-
-
-   6.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   7
-   7.  Security Considerations . . . . . . . . . . . . . . . . . . .   7
-   8.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   8
-     8.1.  Normative References  . . . . . . . . . . . . . . . . . .   8
-     8.2.  Informative References  . . . . . . . . . . . . . . . . .   8
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   8
+   1.  Introduction
+   2.  Semantics
+   3.  Deterministically Encoded CBOR
+   4.  Rationale
+   5.  Examples
+   6.  IANA Considerations
+   7.  Security Considerations
+   8.  References
+     8.1.  Normative References
+     8.2.  Informative References
+   Authors' Addresses
 
 1.  Introduction
 
@@ -160,15 +137,6 @@ Internet-Draft     CBOR Tags for Discriminated Unions       January 2021
 
    In general the number of alternatives, and what data is expected in
    each alternative case, are entirely application dependent.
-
-
-
-
-
-Coutts, et al.            Expires 20 July 2021                  [Page 3]
-
-Internet-Draft     CBOR Tags for Discriminated Unions       January 2021
-
 
    The tags defined in this specification allow the encoding of any
    number of alternatives, but provide compact encoding for the common
@@ -219,13 +187,6 @@ Internet-Draft     CBOR Tags for Discriminated Unions       January 2021
    success value will use case 1 and the body will be a single CBOR byte
    string.
 
-
-
-Coutts, et al.            Expires 20 July 2021                  [Page 4]
-
-Internet-Draft     CBOR Tags for Discriminated Unions       January 2021
-
-
    Decoders that enforce a schema must check the case number is within
    the range of cases allowed, and that the case body follows the schema
    for the supplied case number.  Generic decoders should allow any case
@@ -271,16 +232,6 @@ Internet-Draft     CBOR Tags for Discriminated Unions       January 2021
    Crucially for this specification, the set of alternatives must be
    closed and ordered.  This allows encoding using a natural number to
    distinguish each case.
-
-
-
-
-
-
-Coutts, et al.            Expires 20 July 2021                  [Page 5]
-
-Internet-Draft     CBOR Tags for Discriminated Unions       January 2021
-
 
    Note that this does _not_ correspond to the notion in some
    programming languages of classes and sub-classes since in that
@@ -330,14 +281,6 @@ Internet-Draft     CBOR Tags for Discriminated Unions       January 2021
    the Haskell programming language, representing a simple expression
    tree.
 
-
-
-
-Coutts, et al.            Expires 20 July 2021                  [Page 6]
-
-Internet-Draft     CBOR Tags for Discriminated Unions       January 2021
-
-
    -- A data type representing simple arithmetic expressions:
    data Expr = Lit Int -- integer literal
              | Add Expr Expr -- addition
@@ -386,14 +329,6 @@ Internet-Draft     CBOR Tags for Discriminated Unions       January 2021
 
    TBD
 
-
-
-
-Coutts, et al.            Expires 20 July 2021                  [Page 7]
-
-Internet-Draft     CBOR Tags for Discriminated Unions       January 2021
-
-
 8.  References
 
 8.1.  Normative References
@@ -435,14 +370,3 @@ Authors' Addresses
 
    Phone: +49-421-218-63921
    Email: cabo@tzi.org
-
-
-
-
-
-
-
-
-
-
-Coutts, et al.            Expires 20 July 2021                  [Page 8]
