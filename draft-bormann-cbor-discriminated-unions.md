@@ -166,17 +166,18 @@ range of cases allowed, and that the case body follows the schema for
 the supplied case number. Generic decoders should allow any case number
 and any CBOR data value for the case body.
 
-Canonical CBOR
+Deterministically Encoded CBOR
 ==============
 
 The tag 184 encoding overlaps with the more compact special encodings
 for 0..6 and 7..127.
 
-For applications that need canonical CBOR the following convention must
-be used: alternatives in the range 0..127 must be encoded using the
-special compact encoding, and must not use the tag 184 encoding. This
-follows the general canonical CBOR convention of using the most compact
-form.
+For applications that need deterministically encoded CBOR ({{Section
+4.2 of RFC8949}}) the following convention must be used: alternatives
+in the range 0..127 must be encoded using the special compact
+encoding, and must not use the tag 184 encoding. This follows the
+general deterministic CBOR encoding convention of using the most
+compact form.
 
 <aside markdown="1">
 Issue:
