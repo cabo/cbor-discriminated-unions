@@ -5,10 +5,10 @@
 Network Working Group                                          D. Coutts
 Internet-Draft                                                          
 Intended status: Informational                                M.P. Jones
-Expires: 20 July 2021                                                   
+Expires: 22 July 2021                                                   
                                                          C. Bormann, Ed.
                                                   Universität Bremen TZI
-                                                         16 January 2021
+                                                         18 January 2021
 
 
                    CBOR Tags for Discriminated Unions
@@ -68,7 +68,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 20 July 2021.
+   This Internet-Draft will expire on 22 July 2021.
 
 Copyright Notice
 
@@ -268,14 +268,14 @@ Table of Contents
 
    This corresponds to the following schema, in CDDL [RFC8610] notation:
 
-   result = 121([int, text])
-            122(bytes)
+   result = 185([int, text])
+            186(bytes)
 
    Example values:
 
-   *  "121([3, "the printer is on fire"])"
+   *  "185([3, "the printer is on fire"])"
 
-   *  "122(h'ff00')"
+   *  "186(h'ff00')"
 
    As a second example, here is one based on a data type defined within
    the Haskell programming language, representing a simple expression
@@ -294,12 +294,12 @@ Table of Contents
 
    ; A data type representing simple arithmetic expressions
 
-   expr = 121(int) ; integer literal
-        / 122([expr, expr]) ; addition
-        / 123([expr, expr]) ; subtraction
-        / 124(expr) ; unary negation
-        / 125([expr, expr]) ; multiplication
-        / 126([expr, expr]) ; integer division
+   expr = 185(int) ; integer literal
+        / 186([expr, expr]) ; addition
+        / 187([expr, expr]) ; subtraction
+        / 188(expr) ; unary negation
+        / 189([expr, expr]) ; multiplication
+        / 190([expr, expr]) ; integer division
 
 6.  IANA Considerations
 
