@@ -246,14 +246,14 @@ that is a failure or success, where:
 This corresponds to the following schema, in CDDL {{-cddl}} notation:
 
 ~~~ cddl
-result = 121([int, text])
-         122(bytes)
+result = 185([int, text])
+         186(bytes)
 ~~~
 
 Example values:
 
--   `121([3, "the printer is on fire"])`
--   `122(h'ff00')`
+-   `185([3, "the printer is on fire"])`
+-   `186(h'ff00')`
 
 As a second example, here is one based on a data type defined within the
 Haskell programming language, representing a simple expression tree.
@@ -274,12 +274,12 @@ could be encoded using this schema:
 ~~~ cddl
 ; A data type representing simple arithmetic expressions
 
-expr = 121(int) ; integer literal
-     / 122([expr, expr]) ; addition
-     / 123([expr, expr]) ; subtraction
-     / 124(expr) ; unary negation
-     / 125([expr, expr]) ; multiplication
-     / 126([expr, expr]) ; integer division
+expr = 185(int) ; integer literal
+     / 186([expr, expr]) ; addition
+     / 187([expr, expr]) ; subtraction
+     / 188(expr) ; unary negation
+     / 189([expr, expr]) ; multiplication
+     / 190([expr, expr]) ; integer division
 ~~~
 
 # IANA Considerations
