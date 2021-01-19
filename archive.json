@@ -1,0 +1,83 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2021-01-19T00:53:20.425672+00:00",
+  "repo": "cabo/cbor-discriminated-unions",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "MDExOlB1bGxSZXF1ZXN0NTU2NzA5NzI3",
+      "title": "Fix the tags in the example",
+      "url": "https://github.com/cabo/cbor-discriminated-unions/pull/1",
+      "state": "MERGED",
+      "author": "michaelpj",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2021-01-18T10:41:54Z",
+      "updatedAt": "2021-01-18T10:55:34Z",
+      "baseRepository": "cabo/cbor-discriminated-unions",
+      "baseRefName": "master",
+      "baseRefOid": "a5122ae5f4870800543c09876180bbfe43d7146c",
+      "headRepository": "michaelpj/cbor-discriminated-unions",
+      "headRefName": "tweaks",
+      "headRefOid": "6160b5b4428d4011cb9a6b3a72456038a48417c0",
+      "closedAt": "2021-01-18T10:55:34Z",
+      "mergedAt": "2021-01-18T10:55:34Z",
+      "mergedBy": "cabo",
+      "mergeCommit": {
+        "oid": "c3a2ae82103144a68b657cdbebb329227ea33538"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
+}
